@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="name finder:jar">
+    <output-path>E:/</output-path>
+    <root id="archive" name="mc og name finder.jar">
+      <element id="module-output" name="mc og name finder" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jsoup-1.16.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
