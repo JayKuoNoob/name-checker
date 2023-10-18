@@ -1,3 +1,4 @@
+# This Project Has Been Moved To [Here](https://github.com/RTX4O9O/NameCheckerV2)
 # name-checker
 
 This Java program allows you to check the availability of Minecraft In-Game Names (IGN) from a list of words in a text file.
