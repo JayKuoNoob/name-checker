@@ -1,4 +1,4 @@
-# Minecraft IGN Availability Checker
+# name-checker
 
 This Java program allows you to check the availability of Minecraft In-Game Names (IGN) from a list of words in a text file.
 
