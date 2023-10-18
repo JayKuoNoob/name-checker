@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -27,6 +28,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("請輸入單字列表檔案的路徑：");
         String filePath = scanner.nextLine();
+        ArrayList<String> availableIGN = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
@@ -35,12 +37,19 @@ public class Main {
                 if (string.length() >= 3 && string.length() <= 16) {
                     boolean isNameAvailable = checkNameAvailability(string);
                     if (isNameAvailable) {
-                        System.out.println("可用的名稱：" + string);
+                        System.out.println("[✅ ] " + string);
+                        availableIGN.add(string);
+                    } else {
+                        System.out.println("[❌ ] "+ string);
                     }
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
+        }
+        for (String ign :availableIGN) {
+            System.out.println("可用ign: ");
+            System.out.println(ign);
         }
     }
 
